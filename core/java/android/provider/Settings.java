@@ -4820,6 +4820,12 @@ public final class Settings {
          */
         public static final String DOUBLE_TAP_SLEEP_LOCKSCREEN =
                 "double_tap_sleep_lockscreen";
+        /**
+         * Setting to hold the current set overlay for color bucket.
+         *    overlay package name (String)
+         * @hide
+         */
+        public static final String COLOR_BUCKET_OVERLAY = "color_bucket_overlay";
 
         /**
          * Indicates whether ANBI (Accidental navigation button interaction) is enabled.
@@ -4827,6 +4833,13 @@ public final class Settings {
          * @hide
          */
         public static final String ANBI_ENABLED_OPTION = "anbi_enabled_option";
+ 
+        /**
+         * Three Finger Gesture from Oppo
+         * @hide
+         */
+
+        public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
 
         /**
          * IMPORTANT: If you add a new public settings you also have to add it to
