@@ -4800,6 +4800,11 @@ public final class Settings {
         public static final String MULTI_AUDIO_FOCUS_ENABLED = "multi_audio_focus_enabled";
 
         /**
+         * @hide
+         */
+        public static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -4925,22 +4930,12 @@ public final class Settings {
             PRIVATE_SETTINGS.add(EGG_MODE);
             PRIVATE_SETTINGS.add(SHOW_BATTERY_PERCENT);
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
-            PRIVATE_SETTINGS.add(CUSTOM_BUTTON_EXTRA_KEY_MAPPING);
-            PRIVATE_SETTINGS.add(CUSTOM_DEVICE_PROXI_CHECK_ENABLED);
-            PRIVATE_SETTINGS.add(CUSTOM_DEVICE_GESTURE_FEEDBACK_ENABLED);
-            PRIVATE_SETTINGS.add(CUSTOM_DEVICE_FEATURE_SETTINGS);
-            PRIVATE_SETTINGS.add(PROXIMITY_ON_WAKE);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_ALPHA);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_COLOR_WALL);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_WALL);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_FW);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_RGB);
-            PRIVATE_SETTINGS.add(QS_TILES_BG_DISCO);
-            PRIVATE_SETTINGS.add(CUSTOM_BACK_GESTURE_HEIGHT);
-            PRIVATE_SETTINGS.add(STATUS_BAR_LOGO);
-            PRIVATE_SETTINGS.add(SMART_CLOCK_ENABLE);
-            PRIVATE_SETTINGS.add(SYSTEMUI_PLUGIN_VOLUME);
+            PRIVATE_SETTINGS.add(COLOR_BUCKET_OVERLAY);
+            PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_GESTURE);
+            PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_LOCKSCREEN);
+            PRIVATE_SETTINGS.add(VOLUME_ROCKER_WAKE);
+            PRIVATE_SETTINGS.add(VOLUME_BUTTON_MUSIC_CONTROL);
+
         }
 
         /**
