@@ -101,6 +101,20 @@ public class DragDownHelper implements Gefingerpoken {
                 mStartingChild = null;
                 mInitialTouchY = y;
                 mInitialTouchX = x;
+
+                if (mDoubleTapToSleepEnabled && y < mStatusBarHeaderHeight) {
+                    long eventTime = event.getEventTime();
+                    if (mLastDownEvent != -1) {
+                        long diff = eventTime - mLastDownEvent;
+
+                        if (diff < mDoubleTapTimeout) {
+                            mGoToSleep.run();
+                        }
+                        mLastDownEvent = -1;
+                    } else {
+                        mLastDownEvent = eventTime;
+                    }
+                }
                 break;
 
             case MotionEvent.ACTION_MOVE:
@@ -297,5 +311,9 @@ public class DragDownHelper implements Gefingerpoken {
          * @return if drag down is enabled anywhere, not just on selected views.
          */
         boolean isDragDownAnywhereEnabled();
+    }
+
+    public void updateDoubleTapToSleep(boolean updateDoubleTapToSleep) {
+        mDoubleTapToSleepEnabled = updateDoubleTapToSleep;
     }
 }

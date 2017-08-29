@@ -69,6 +69,7 @@ import android.content.pm.IPackageManager;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
+import android.database.ContentObserver;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.media.AudioAttributes;
@@ -894,6 +895,9 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
 
         createAndAddWindows(result);
+
+        mStatusBarSettingsObserver.observe();
+        mStatusBarSettingsObserver.update();
 
         if (mWallpaperSupported) {
             // Make sure we always have the most current wallpaper info.
