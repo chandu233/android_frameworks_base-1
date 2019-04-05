@@ -23,4 +23,7 @@
     <java-symbol type="string" name="popup_camera_dialog_no" />
     <java-symbol type="string" name="popup_camera_dialog_raise" />
 
+    <!-- Whether to show a custom view for FOD -->
+    <java-symbol type="bool" name="config_needCustomFODView" />
+
 </resources>

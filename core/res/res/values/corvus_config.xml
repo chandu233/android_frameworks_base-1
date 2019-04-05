@@ -24,4 +24,7 @@
     <!-- Whether the device has a popup camera -->
     <bool name="config_hasPopupCamera">false</bool>
 
+    <!-- Whether to show a custom view for FOD -->
+    <bool name="config_needCustomFODView">false</bool>
+
 </resources>
