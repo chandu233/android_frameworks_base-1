@@ -21,6 +21,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -31,6 +32,8 @@ import com.android.systemui.Interpolators;
 import com.android.systemui.R;
 import com.android.systemui.plugins.FalsingManager;
 import com.android.systemui.statusbar.notification.row.ExpandableView;
+
+import com.awaken.internal.util.PowerUtils;
 
 /**
  * A utility class to enable the downward swipe on the lockscreen to go to the full shade and expand
@@ -58,7 +61,13 @@ public class DragDownHelper implements Gefingerpoken {
     private float mLastHeight;
     private FalsingManager mFalsingManager;
 
-    public DragDownHelper(Context context, View host, ExpandHelper.Callback callback,
+    private boolean mDoubleTapToSleepEnabled;
+    private int mStatusBarHeaderHeight;
+    private long mLastDownEvent = -1;
+    private long mDoubleTapTimeout;
+    private Runnable mGoToSleep;
+
+    public DragDownHelper(final Context context, View host, ExpandHelper.Callback callback,
             DragDownCallback dragDownCallback,
             FalsingManager falsingManager) {
         mMinDragDistance = context.getResources().getDimensionPixelSize(
@@ -70,6 +79,14 @@ public class DragDownHelper implements Gefingerpoken {
         mDragDownCallback = dragDownCallback;
         mHost = host;
         mFalsingManager = falsingManager;
+        mStatusBarHeaderHeight = context
+                .getResources().getDimensionPixelSize(R.dimen.status_bar_header_height_keyguard);
+        mGoToSleep = new Runnable() {
+            @Override
+            public void run() {
+                PowerUtils.switchScreenOff(context);
+            }
+        };
     }
 
     @Override
