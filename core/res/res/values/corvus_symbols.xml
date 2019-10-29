@@ -1,4 +1,6 @@
 <resources>
+    <!-- Pocket bridge -->
+    <java-symbol type="string" name="config_pocketBridgeSysfsInpocket" />
   <!-- Power menu reboot -->
   <java-symbol name="reboot_to_bootloader_title" type="string" />
   <java-symbol name="reboot_to_bootloader_message" type="string" />
