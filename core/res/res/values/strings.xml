@@ -18,6 +18,9 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Press and hold power button to unlock</string>
+
     <!-- Global actions -->
     <string name="reboot_to_bootloader_title">Reboot bootloader</string>
     <string name="reboot_to_bootloader_message">Rebooting to bootloader\u2026</string>
