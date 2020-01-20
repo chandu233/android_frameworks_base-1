@@ -1,4 +1,6 @@
 <resources>
+    <!-- Dot Analog clock -->
+    <string name="clock_title_dot" translatable="false">Dot</string>
 
     <!-- QS Config -->
     <string name="qs_menu_item_columns">Columns</string>
