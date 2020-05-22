@@ -3856,6 +3856,19 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
     };
 
+    private PotatoSettingsObserver mPotatoSettingsObserver = new PotatoSettingsObserver(mHandler);
+    private class AwakenSettingsObserver extends ContentObserver {
+        AwakenSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_PANEL_BG_USE_NEW_TINT),
+                    false, this, UserHandle.USER_ALL);
+        }
+
     public int getWakefulnessState() {
         return mWakefulnessLifecycle.getWakefulness();
     }
