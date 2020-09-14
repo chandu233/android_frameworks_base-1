@@ -4821,21 +4821,6 @@ public final class Settings {
         public static final String DOUBLE_TAP_SLEEP_LOCKSCREEN =
                 "double_tap_sleep_lockscreen";
         /**
-         * Setting to hold the current set overlay for color bucket.
-         *    overlay package name (String)
-         * @hide
-         */
-        public static final String COLOR_BUCKET_OVERLAY = "color_bucket_overlay";
-
-        /**
-<<<<<<< HEAD
-         * Indicates whether ANBI (Accidental navigation button interaction) is enabled.
-         *
-         * @hide
-         */
-        public static final String ANBI_ENABLED_OPTION = "anbi_enabled_option";
- 
-        /**
          * @hide
          */
         public static final String LOCKSCREEN_MEDIA_ART = "lockscreen_media_art";
@@ -4853,8 +4838,6 @@ public final class Settings {
         public static final String GLOBAL_ACTIONS_LIST = "global_actions_list";
 
         /**
-=======
->>>>>>> parent of 2a3de78... base: Introduce Accidental Touch
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate

@@ -644,14 +644,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     private static final int MSG_POWER_VERY_LONG_PRESS = 25;
     private static final int MSG_RINGER_TOGGLE_CHORD = 26;
     private static final int MSG_DISPATCH_VOLKEY_WITH_WAKE_LOCK = 27;
-    private static final int MSG_TOGGLE_TORCH = 27;
-
-    private CameraManager mCameraManager;
-    private String mRearFlashCameraId;
-    private boolean mTorchLongPressPowerEnabled;
-    private boolean mTorchEnabled;
-    private int mTorchTimeout;
-    private PendingIntent mTorchOffPendingIntent;
 
     private boolean mHasPermanentMenuKey;
     private SwipeToScreenshotListener mSwipeToScreenshot;
@@ -1830,8 +1822,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 mHandler.post(mScreenshotRunnable);
             }
         });
-        mCameraManager = (CameraManager) mContext.getSystemService(Context.CAMERA_SERVICE);
-        mCameraManager.registerTorchCallback(new TorchModeCallback(), mHandler);
         mWakeGestureListener = new MyWakeGestureListener(mContext, mHandler);
         mSettingsObserver = new SettingsObserver(mHandler);
         mSettingsObserver.observe();
