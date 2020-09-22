@@ -83,6 +83,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.Gravity;
 
 import com.android.settingslib.Utils;
 import com.android.systemui.Dependency;

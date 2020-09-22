@@ -130,6 +130,9 @@
          be sent during a change to the audio output device. -->
     <bool name="config_sendAudioBecomingNoisy">true</bool>
 
+    <!-- Custom Fod -->
+    <bool name="config_needCustomFODView">false</bool>
+
     <!-- Whether Hearing Aid profile is supported -->
     <bool name="config_hearing_aid_profile_supported">false</bool>
 
