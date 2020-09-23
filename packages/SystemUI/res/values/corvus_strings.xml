@@ -1,0 +1,7 @@
+<resources>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+
+    <!-- Icon tuner -->
+    <string name="statusbar_items_title">Icon tuner</string>
+</resources>
