@@ -53,6 +53,7 @@ import android.renderscript.RenderScript;
 import android.renderscript.Type;
 import android.text.TextUtils;
 import android.util.Log;
+import android.os.SystemProperties;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
@@ -66,7 +67,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
-
+import java.util.Arrays;
 /**
  * The Camera class is used to set image capture settings, start/stop preview,
  * snap pictures, and retrieve frames for encoding for video.  This class is a

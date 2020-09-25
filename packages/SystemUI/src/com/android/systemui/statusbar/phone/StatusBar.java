@@ -520,7 +520,6 @@ public class StatusBar extends SystemUI implements DemoMode,
     private final NotificationRemoteInputManager mRemoteInputManager;
     private boolean mWallpaperSupported;
 
-    private ThemeModeController mThemeModeController;
     private VolumePluginManager mVolumePluginManager;
 
     private final BroadcastReceiver mWallpaperChangedReceiver = new BroadcastReceiver() {
@@ -881,7 +880,6 @@ public class StatusBar extends SystemUI implements DemoMode,
         mWallpaperSupported =
                 mContext.getSystemService(WallpaperManager.class).isWallpaperSupported();
 
-        mThemeModeController = new ThemeModeController(mContext, mHandler);
         mVolumePluginManager = new VolumePluginManager(mContext, mHandler);
 
         // Connect in to the status bar manager service

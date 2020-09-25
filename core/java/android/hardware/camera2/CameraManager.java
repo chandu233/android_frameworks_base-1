@@ -61,6 +61,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import android.text.TextUtils;
+import android.app.ActivityThread;
+import android.app.AppOpsManager;
 
 /**
  * <p>A system service manager for detecting, characterizing, and connecting to

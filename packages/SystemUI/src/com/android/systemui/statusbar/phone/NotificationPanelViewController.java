@@ -423,9 +423,6 @@ public class NotificationPanelViewController extends PanelViewController {
     private GestureDetector mLockscreenDoubleTapToSleep;
     private boolean mIsLockscreenDoubleTapEnabled;
 
-    private int mStatusBarHeaderHeight;
-    private GestureDetector mDoubleTapGesture;
-
     /**
      * Cache the resource id of the theme to avoid unnecessary work in onThemeChanged.
      *
