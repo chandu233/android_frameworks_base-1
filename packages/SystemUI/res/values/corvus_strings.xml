@@ -1,4 +1,5 @@
 <resources>
+
     <!-- QS Config -->
     <string name="qs_menu_item_columns">Columns</string>
     <string name="qs_menu_item_columns_landscape">Columns landscape</string>
@@ -25,6 +26,7 @@
     <string name="global_action_reboot_sub">System</string>
     <string name="global_action_reboot_recovery">Recovery</string>
     <string name="global_action_reboot_bootloader">Bootloader</string>
+   <string name="global_action_reboot_systemui">SystemUI</string>
     <string name="global_action_settings">Settings</string>
 
     <!-- AOD QS tile -->
