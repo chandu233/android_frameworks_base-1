@@ -29,20 +29,14 @@ LOCAL_REQUIRED_MODULES := \
         DisplayCutoutEmulationHoleOverlay \
 	DisplayCutoutEmulationTallOverlay \
 	DisplayCutoutEmulationWaterfallOverlay \
-	FontAclonicaSourceOverlay \
-	FontAmaranteSourceOverlay \
-	FontBariolSourceOverlay \
-	FontCagliostroSourceOverlay \
-	FontComicSansSourceOverlay \
-	FontCoolstorySourceOverlay \
-	FontGoogleSansSourceOverlay \
-	FontLGSmartGothicSourceOverlay \
-	FontNotoSerifSourceOverlay \
-	FontOneplusSlateSource \
-	FontRosemarySourceOverlay \
-	FontSamsungOneSourceOverlay \
-	FontSonySketchSourceOverlay \
-	FontSurferSourceOverlay \
+        FontAclonicaSourceOverlay \
+        FontCagliostroSourceOverlay \
+        FontGoogleSansSourceOverlay \
+        FontNotoSerifSourceOverlay \
+        FontOneplusSlateSource \
+        FontRosemarySourceOverlay \
+        FontSamsungOneSourceOverlay \
+        FontSurferSourceOverlay \
 	IconPackCircularAndroidOverlay \
 	IconPackCircularLauncherOverlay \
 	IconPackCircularSettingsOverlay \
