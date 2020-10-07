@@ -15,6 +15,6 @@
  * limitations under the License.
  */
 
-package com.android.internal.potato.hardware;
+package com.android.internal.corvus.hardware;
 
 parcelable TouchscreenGesture;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.potato.hardware;
+package com.android.internal.corvus.hardware;
 
 import android.os.Parcel;
 import android.os.Parcelable;
